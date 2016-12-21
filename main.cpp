@@ -3,12 +3,10 @@
 using namespace std;
 
 int main() {
-    int n, q, r, s, v;
+    int n, q, r;
     cin >> n;
-    q = n % 10;
-    r = n / 10 % 10;
-    s = n / 100;
-    v = q + r + s;
-    cout << v;
+    q = (n + 1) % 2;
+    r = n + q + 1;
+    cout << r;
     return 0;
 }
