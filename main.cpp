@@ -3,13 +3,11 @@
 using namespace std;
 
 int main() {
-    int n1, n2, n3;
-    int p1, p2, p3, ps;
-    cin >> n1 >> n2 >> n3;
-    p1 = n1 % 2 + n1 / 2;
-    p2 = n2 % 2 + n2 / 2;
-    p3 = n3 % 2 + n3 / 2;
-    ps = p1 + p2 + p3;
-    cout << ps;
+    int a, b, n, sk, r, k;
+    cin >> a >> b >> n;
+    sk = a * 100 * n + b * n;
+    r = sk / 100;
+    k = sk % 100;
+    cout << r << " " << k;
     return 0;
 }
